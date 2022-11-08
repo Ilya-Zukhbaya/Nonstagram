@@ -1,16 +1,18 @@
 import Head from 'next/head';
+import Feed from '../components/Feed';
 import Header from '../components/Header';
-import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <Head>
         <title>Nonstagram</title>
         <meta name="description" content="Nonstagram" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Feed />
     </div>
   );
 }
